@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta  charset="UTF-8">
+        <title>اذكر الله</title>
+        <body style="text-align:center;font-family:Amiri;margin-top:50px">
+            <h1>اذكر الله</h1>
+            <p id="zekr" >اضغط على الزر لعرض الذكر</p>
+            <button onclick="showzekr()">ذكر جديد</button>
+            <script>
+                let azkar=["سبحان الله","الحمد لله","لا إله إلا الله","الله أكبر","لا حول و لا قوة إلا بالله","اللهم صل و سلم و بارك على محمد"];
+                function showzekr(){
+                    let random=Math.floor(Math.random()*azkar.length);
+                    document.getElementById("zekr").innerText=azkar[random];
+                }
+            </script>
+        </body>
+    </head>
+</html>
